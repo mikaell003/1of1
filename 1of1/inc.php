@@ -1,9 +1,9 @@
 <?php
 session_start();
 const DB_HOST='localhost', DB_NAME='oneofone', DB_USER='root', DB_PASS='';
-const TILL='000000';              // your M-Pesa Till / Paybill
-const WHATSAPP='254700000000';    // your WhatsApp number, no +
-const ADMIN_PASSWORD='change-me-now';
+const TILL='000000';              
+const WHATSAPP='254700000000';    
+const ADMIN_PASSWORD='mike';
 $pdo=new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8mb4',DB_USER,DB_PASS,
  [PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC]);
 function e($s){return htmlspecialchars((string)$s,ENT_QUOTES,'UTF-8');}
